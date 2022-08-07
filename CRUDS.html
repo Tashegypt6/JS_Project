@@ -29,10 +29,10 @@
 
         <div class="outputs">
             <div class="searchBlock">
-                <input type="text" id="search" placeholder="search">
+                <input onkeyup="searchData(this.value.toLowerCase())" type="text" id="search" placeholder="search">
                 <div class="btnSearch">
-                    <button id="saerchTitle">Search by Title</button>
-                    <button id="saerchCategory">Search by category</button>
+                    <button onclick="getSearchMood(this.id)" id="saerchTitle">Search by Title</button>
+                    <button onclick="getSearchMood(this.id)" id="saerchCategory">Search by category</button>
                 </div>
             </div>
         </div>
